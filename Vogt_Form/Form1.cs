@@ -19,8 +19,10 @@ namespace Vogt_Form
 
         private void btn_add_Click(object sender, EventArgs e)
         {
-            Name = (textbox_f_name.Text+" "+textbox_l_name.Text);
-            listbox.Items.Add(Name);
+            string name = (textbox_f_name.Text+" "+textbox_l_name.Text);
+            listbox.Items.Add(name);
+
+            lblStatusStrip.Text = (name + " Added!");
 
             textbox_f_name.Clear();
             textbox_l_name.Clear();
@@ -28,8 +30,8 @@ namespace Vogt_Form
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // Comment Test
-            // Comment
+            lblStatusStrip.Text = "Ready!";
         }
+
     }
 }
