@@ -56,6 +56,7 @@ namespace Vogt_Form
                     foreach(char names in listbox.Items.ToString())
                     {
                         // Why isn't string names working?
+                        // Update. I mispelled breaks
                         
                     }
                 }
