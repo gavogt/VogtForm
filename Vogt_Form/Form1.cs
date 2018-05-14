@@ -19,6 +19,7 @@ namespace Vogt_Form
         public Form1()
         {
             InitializeComponent();
+
         }
 
         private void btn_add_Click(object sender, EventArgs e)
@@ -30,12 +31,13 @@ namespace Vogt_Form
 
             textbox_f_name.Clear();
             textbox_l_name.Clear();
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
             lblStatusStrip.Text = "Ready!";
+
         }
 
         private void saveToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -53,10 +55,10 @@ namespace Vogt_Form
                     bf.Serialize(myStream, listbox.Items.ToString());
                     myStream.Close();
 
-                    foreach(char names in listbox.Items.ToString())
+                    foreach (char names in listbox.Items.ToString())
                     {
                         // Why isn't string names working?
-                        
+
                     }
                 }
             }
@@ -64,7 +66,7 @@ namespace Vogt_Form
 
         private void btn_remove_Click(object sender, EventArgs e)
         {
-            
+            // Remove selected employee
         }
     }
 }
