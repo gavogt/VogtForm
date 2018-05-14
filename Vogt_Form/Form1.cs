@@ -52,6 +52,12 @@ namespace Vogt_Form
                     BinaryFormatter bf = new BinaryFormatter();
                     bf.Serialize(myStream, listbox.Items.ToString());
                     myStream.Close();
+
+                    foreach(char names in listbox.Items.ToString())
+                    {
+                        // Why isn't string names working?
+                        
+                    }
                 }
             }
         }
